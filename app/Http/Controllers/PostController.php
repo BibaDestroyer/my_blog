@@ -43,7 +43,6 @@ class PostController extends Controller
             'title' => 'string',
             'content' => 'string',
         ]);
-        dd($data);
         $post->update($data);
         return redirect()->route('posts.show', $post->id);
     }

@@ -8,12 +8,12 @@
 
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
-      <input type="text" class="form-control" id="title" value="{{ $post->title }}">
+      <input type="text" class="form-control" id="title" value="{{ $post->title }}" name="title">
     </div>
 
     <div class="mb-3">
         <label for="content" class="form-label">Content</label>
-        <textarea id="content" class="form-control">{{ $post->content}}</textarea>
+        <textarea id="content" class="form-control" name="content">{{ $post->content}}</textarea>
     </div>
 
     <button type="submit" class="btn btn-success">Save</button>
