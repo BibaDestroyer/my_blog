@@ -20,7 +20,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
-// Test
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}/view', [PostController::class, 'show'])->name('posts.show');
